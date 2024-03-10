@@ -1,1 +1,1 @@
-<p>README in progress, as tutorial project is not ready yet.. </p>
+<p>This Tutorial project is aimed at preparing students for possible interview questions</p>
