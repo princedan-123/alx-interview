@@ -78,7 +78,6 @@ for line in sys.stdin:
     line = line.strip()
     pattern_match = re.fullmatch(pattern, line)
     if pattern_match is not None:
-        print('matched')
         text = pattern_match.group()
         text_list = text.split(' ')
         file_size.append(int(text_list[-1]))
