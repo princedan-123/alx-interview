@@ -10,10 +10,10 @@ def validUTF8(data):
         return: True or False
     """
     for byte in data:
-        validate = None
+        validate = False
         if isinstance(byte, int):
-            bin = bin(byte)
-            binary = bin[2:]
+            binary_string = bin(byte)
+            binary = binary_string[2:]
             if len(binary) == 7:
                 validate = True
             if len(binary) > 7:
@@ -21,7 +21,7 @@ def validUTF8(data):
                 second_bit = binary[1]
                 if first_bit == '1' and second_bit == '1':
                     validate = True
-        else:
-            validate = False
-            return validate
+                else:
+                    validate = False 
+                    return validate
     return validate
