@@ -4,6 +4,8 @@ const request = require('request');
 const path = process.argv[2];
 const filmEndpoint = `https://swapi.dev/api/films/${path}`;
 
+// for more info on starwars api visit https://swapi.dev/documentation
+
 /* Create a function for making request to each person endpoints
  * in characters array and returns the person's name
  */
@@ -24,7 +26,7 @@ function person (url) {
   );
 }
 
-/* A funcion that makes a request to a film endpoint and returns an characters attribute
+/* A funcion that makes a request to a film endpoint and returns a characters attribute
  * which is an array of person endpoints in a particular film
  */
 
@@ -42,7 +44,7 @@ function getCharacters (filmEndpoint) {
   }
   );
 }
-/* calling the getcharacter function to the the character and subsequently
+/* calling the getCharacter function to get the character and subsequently
  * make a request to each person endpoint in the character array
  */
 
