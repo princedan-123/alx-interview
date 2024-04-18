@@ -5,7 +5,7 @@ const path = process.argv[2];
 const filmEndpoint = `https://swapi.dev/api/films/${path}`;
 
 /* Create a function for making request to each person endpoints
- * in characters array
+ * in characters array and returns the person's name
  */
 
 function person (url) {
@@ -25,7 +25,7 @@ function person (url) {
 }
 
 /* A funcion that makes a request to a film endpoint and returns an characters attribute
- * which is an array of person endpoints in a particular file
+ * which is an array of person endpoints in a particular film
  */
 
 function getCharacters (filmEndpoint) {
