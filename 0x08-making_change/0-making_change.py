@@ -35,8 +35,6 @@ def makeChange(coins, total):
     greedy_number = None
     while greedy_number != -1:
         greedy_number = greedy(coins, total)
-        print('iteration total:', total)
-        print('iteration greedy number:', greedy_number)
         if total == 0:
             return counter
         total = total - greedy_number
